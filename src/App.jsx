@@ -19,7 +19,6 @@ function App() {
             <div className="getstarted_btn">
               <a href="#content">
                 <button
-                  onClick={() => handleGetStarted()}
                   className="get-started-btn"
                 >
                   Get Started
