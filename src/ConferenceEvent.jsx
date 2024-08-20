@@ -151,6 +151,15 @@ const ConferenceEvent = () => {
             }
         }
     }
+    
+    // redirect to landing page
+    const navigateToLanding = () => {
+        const section = document.getElementById("landing");
+        if (section) {
+            section.scrollIntoView({behavior:"instant"});
+        }
+        console.log(section)
+    };
 
     const totalCosts = {
         venue: venueTotalCost,
@@ -160,8 +169,8 @@ const ConferenceEvent = () => {
 
     return (
         <>
-            <nav className="navbar_event_conference">
-                <div className="company_logo">Conference Expense Planner</div>
+            <div className="navbar_container" id="content">
+                <a className="company_logo" href="#landing" onClick={navigateToLanding}>Conference Expense Planner</a>
                 <div className="left_navbar">
                     <div className="nav_links">
                         <a href="#venue" onClick={() => navigateToProducts("#venue")} >Venue</a>
@@ -172,7 +181,7 @@ const ConferenceEvent = () => {
                         Show Details
                     </button>
                 </div>
-            </nav>
+            </div>
             <div className="main_container">
                 {!showItems
                     ?
@@ -180,7 +189,6 @@ const ConferenceEvent = () => {
                         <div className="items-information">
                             <div id="venue" className="venue_container container_main">
                                 <div className="text">
-
                                     <h1>Venue Room Selection</h1>
                                 </div>
                                 <div className="venue_selection">

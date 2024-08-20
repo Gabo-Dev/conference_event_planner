@@ -9,7 +9,7 @@ const TotalCost = ({ totalCosts, ItemsDisplay }) => {
         <div className="pricing-app">
             <div className="display_box">
                 <div className="header">
-                    <p className="preheading"><h3>Total cost for the event</h3></p>
+                    <p className="preheading"><span>Total cost for the event</span></p>
                 </div>
                 <div>
                     <h2 id="pre_fee_cost_display" className="price">
