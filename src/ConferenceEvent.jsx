@@ -160,7 +160,7 @@ const ConferenceEvent = () => {
 
     return (
         <>
-            <navbar className="navbar_event_conference">
+            <nav className="navbar_event_conference">
                 <div className="company_logo">Conference Expense Planner</div>
                 <div className="left_navbar">
                     <div className="nav_links">
@@ -172,7 +172,7 @@ const ConferenceEvent = () => {
                         Show Details
                     </button>
                 </div>
-            </navbar>
+            </nav>
             <div className="main_container">
                 {!showItems
                     ?
