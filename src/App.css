@@ -15,7 +15,7 @@
   color: white;
   overflow: hidden; 
   background-color: rgb(185, 186, 187);
-  /* position: relative; */
+  
 }
 
 .first_page::before {
@@ -77,13 +77,12 @@
   flex-direction: column;
   gap: 30px;
   text-align: justify;
+  margin: 2rem;
 }
 
 .aboutus_container p {
   font-size: 23px;
   font-weight: 700;
-  
-
 }
 
 .first_page_name_btn {
